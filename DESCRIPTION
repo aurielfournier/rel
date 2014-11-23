@@ -1,0 +1,9 @@
+Package: auriel
+Title: auriels_stuff
+Version: 0.1
+Authors@R: "Auriel Fournier <aurielfournier@gmail.com> [aut, cre]"
+Description: A package of functions I use frequently
+Depends:
+    R (>= 3.0.2)
+License: What license is it under?
+LazyData: true
