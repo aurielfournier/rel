@@ -5,6 +5,9 @@
 #' @keywords julian date
 #' @export
 #' @examples
+#' jul_con()
+
+
 
 jul_con <- function(x){
   x <-   apply(x,2, as.numeric) ##this is to make sure they came in as a numeric not as a character or factor
