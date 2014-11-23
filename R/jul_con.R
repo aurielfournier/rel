@@ -1,7 +1,7 @@
 #' Turns Month/Day/Year into Julian Date
 #'
 #' This function lets you convert regular dates to julian ones
-#' @param 
+#' @param data.frame three columns (month/day/year)
 #' @keywords julian date
 #' @export
 #' @examples
