@@ -9,7 +9,6 @@
 
 
 theme_krementz <- function(){
-  theme_bw()+
   theme(axis.text.x = element_text(size=12,color="black"),
         axis.text.y = element_text(size=12,color="black"),
         axis.title.x=element_blank(),
