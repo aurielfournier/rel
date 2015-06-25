@@ -13,7 +13,8 @@ theme_krementz <- function(){
         axis.text.y = element_text(size=12,color="black"),
         axis.title.x=element_blank(),
         axis.title.y=element_text(size=20),
-        plot.background = element_rect(fill = "white" ), #plot background color
+        plot.background = element_blank(),
+        panel.border=element_blank(),
         panel.grid.major= element_line(colour=NA), 
         panel.grid.minor=element_line(colour=NA),
         title=element_text(size=20),
