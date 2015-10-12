@@ -11,7 +11,6 @@
 theme_krementz <- function(){
   theme(axis.text.x = element_text(size=12,color="black"),
         axis.text.y = element_text(size=12,color="black"),
-        axis.title.x=element_blank(),
         axis.title.y=element_text(size=20),
         plot.background = element_blank(),
         panel.border=element_blank(),
