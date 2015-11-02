@@ -18,20 +18,18 @@ sora_spline <- function(data, spar=.8, year){
   ### takes the smooth spline results and puts them in a data frame
   smoothdf = data.frame(x=sp$x, y=sp$y, year=year)
   ## Bootstrapped COnfidence Interval
-  B = 1000
+  B = 100
   n = nrow(data)
   boot.samples = matrix(NA,n-1, B)
   boot.smooth = as.data.frame(matrix(NA,n,2))
   boot.smooth[,1] <- smoothdf$x
   colnames(boot.smooth)[1] <- "odate"
   
-  for(i in 1:1000){
+  for(i in 1:100){
     r <- sample(1:nrow(data),1)
     boot.samples[,i] <- data[(-r),2]
   }
-  
-  
-  for(i in 1:1000){
+  for(i in 1:100){
     r <- sample(1:nrow(data),1)
     df <- data.frame(odate=data[(-r),1],mean=c(boot.samples[,i]))
     dfs <- smooth.spline(df$odate, df$mean, spar=spar)
@@ -39,9 +37,9 @@ sora_spline <- function(data, spar=.8, year){
     boot.smooth <- merge(boot.smooth, dfdf, by="odate", all.x=TRUE)
   }
   
-  sorasd <- apply(boot.smooth,1,sd, na.rm=TRUE)
+  sorasd <- apply(boot.smooth[,2:ncol(boot.smooth)],1,sd, na.rm=TRUE)
   me = ceiling(10 * 2 * sorasd)/10
-  smoothdf[1:nrow(smoothdf),"cip"] <- round(smoothdf[1:nrow(data),2], 1) + 1 * me
+  smoothdf[1:nrow(data),"cip"] <- round(smoothdf[1:nrow(data),2], 1) + 1 * me
   smoothdf[1:nrow(smoothdf),"cin"] <- round(smoothdf[1:nrow(data),2], 1) - 1 * me
   smoothdf
 }
