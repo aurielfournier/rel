@@ -35,7 +35,7 @@ sora_spline <- function(data, spar=.8, year){
   
   sorasd <- apply(boot.smooth,2,sd)
   me = ceiling(10 * 2 * sorasd)/10
-  smoothdf[1:nrow(smoothdf)-1,"cip"] <- round(smoothdf[1:nrow(data)-1,2], 1) + 1 * me
-  smoothdf[1:nrow(smoothdf)-1,"cin"] <- round(smoothdf[1:nrow(data)-1,2], 1) - 1 * me
+  smoothdf[2:nrow(smoothdf),"cip"] <- round(smoothdf[2:nrow(data),2], 1) + 1 * me
+  smoothdf[2:nrow(smoothdf),"cin"] <- round(smoothdf[2:nrow(data),2], 1) - 1 * me
   smoothdf
 }
