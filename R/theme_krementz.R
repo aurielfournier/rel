@@ -18,5 +18,7 @@ theme_krementz <- function(){
         panel.grid.minor=element_line(colour=NA),
         title=element_text(size=20),
         panel.background = element_rect(fill = "white"),
-        axis.line=element_line(colour="black"))
+        axis.line=element_line(colour="black"),
+        strip.background=element_rect(fill="white", color="black"),
+        strip.text=element_text(size=15))
 }
