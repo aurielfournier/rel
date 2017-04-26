@@ -13,4 +13,3 @@ go from ordinal dates to readable dates in axis
 ggplot(data=dat, aes(x=x, y=y))+geom_point()+
 }
 \keyword{ggplot2}
-

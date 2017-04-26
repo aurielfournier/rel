@@ -14,4 +14,3 @@ there are no arguments
 ggplot(data=dat, aes(x=x, y=y))+geom_point()+theme_krementz()
 }
 \keyword{ggplot2}
-

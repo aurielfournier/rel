@@ -16,4 +16,3 @@ This function allows you to express your love of rails.
 rails_function()
 }
 \keyword{rails}
-

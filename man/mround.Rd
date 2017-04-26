@@ -16,4 +16,3 @@ Rounds numbers into categories by dec
 mround()
 }
 \keyword{rounding}
-

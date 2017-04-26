@@ -18,4 +18,3 @@ round values by 10
 \keyword{numeric}
 \keyword{round}
 \keyword{values}
-

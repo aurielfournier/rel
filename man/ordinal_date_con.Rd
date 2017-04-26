@@ -17,4 +17,3 @@ ordinal_date_con()
 }
 \keyword{date}
 \keyword{ordinal}
-

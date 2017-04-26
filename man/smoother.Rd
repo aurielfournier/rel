@@ -17,4 +17,3 @@ smoother()
 }
 \keyword{smooth}
 \keyword{spline}
-

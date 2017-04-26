@@ -21,4 +21,3 @@ sora_spline()
 Needs data with three columns, ordinal date, sora perhour and the year
 }
 \keyword{rails}
-
