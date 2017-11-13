@@ -6,4 +6,13 @@ This is intended just for my use, but I'm happy to share it with othres if they 
 
 Maintained by: Auriel Fournier
 aurielfournier@gmail.com
-@RallidaeRule
+@RallidaeRule'
+
+
+To install:
+
+```{r}
+install_github("aurielfournier/rel")
+
+library(auriel)
+```
