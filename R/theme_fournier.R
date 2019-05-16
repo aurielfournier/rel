@@ -5,7 +5,6 @@
 #' @examples 
 #' ggplot(data=dat, aes(x=x, y=y))+geom_point()+theme_fournier()
 
-
 theme_fournier <- function(){
   theme(axis.text.x = element_text(size=12,color="black"),
         axis.text.y = element_text(size=12,color="black"),
