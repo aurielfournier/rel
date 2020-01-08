@@ -14,5 +14,5 @@ To install:
 ```{r}
 install_github("aurielfournier/rel")
 
-library(auriel)
+library(rel)
 ```
